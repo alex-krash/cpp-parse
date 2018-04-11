@@ -1,0 +1,9 @@
+option java_package = "com.badoo.uds.common.protocol";
+
+message uds_event {
+	required int32           ts             = 1; // timestamp
+	required string          event_name     = 2; // event name
+	required int32           count          = 3; // event count
+	repeated string          keys           = 4; // dimension names
+	repeated string          values         = 5; // dimension values
+}
